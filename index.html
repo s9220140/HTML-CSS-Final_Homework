@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/vine_icon.ico">
+    <meta name="description" content="HTML排版練習,圖文跟選單主要是用flex排版，加上一些hover互動效果等等。" />
+    <meta property="og:url" content="https://s9220140.github.io/html_final_homework/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="HTML排版練習" />
+    <meta property="og:description" content="HTML排版練習,圖文跟選單主要是用flex排版，加上一些hover互動效果等等。" />
+    <meta property="og:image" content="https://glasbans.com/assets/images/services/web-design-01.jpg" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HTML&CSS 最終作業</title>
+</head>
+<body>
+    <a id="goTop" href="#">
+        <img src="images/up-arrow.png" alt="">
+    </a>
+    <div class="wrap">
+        <div class="nav">
+            <ul id="social">
+                <li>
+                    <a id="facebook" href="#">
+                        <img class="icon" src="images/icon-facebook.png" alt="facebook">粉絲團</a>
+                </li>
+                <li>
+                    <a id="twitter" href="#">
+                        <img class="icon" src="images/icon-twitter.png" alt="twitter">追蹤我們</a>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        <div class="header">
+            <h1>
+                <a class="logo" href="#">Hex School</a>
+            </h1>
+            <ul class="menu">
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">產品介紹</a></li>
+                <li><a href="#">關於我們</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <div class="rect">
+                <h2>六角學院<br>帶你奠定良好的前端基礎</h2>
+            </div>
+        </div>
+        <div class="content">
+            <ul class="tutorial">
+                <li>
+                    <div class="tutorImg">
+                        <a href="images/image-3.jpg"><img src="images/img_html5.png" alt="html"></a>
+                    </div>
+                    <h3>HTML5 基礎教學</h3>
+                    <p>主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
+                </li>
+                <li>
+                    <div class="tutorImg">
+                        <a href="images/image-4.jpg"><img id="rwdImg" src="images/img_responsive.png" alt="rwd"></a>
+                    </div>
+                    <h3>響應式網頁設計</h3>
+                    <p>響應式網站設計 (Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。
+                    </p>
+                </li>
+                <li>
+                    <div class="tutorImg">
+                        <a href="images/image-5.jpg"><img id="jQueryImg" src="images/img_jquery.png" alt="jquery"></a>
+                    </div>
+                    <h3>jQuery 實戰教學</h3>
+                    <span>本課程有以下特色</span>
+                    <ol>
+                        <li>瞭解變數的使用方法</li>
+                        <li>學習並操作DOM</li>
+                        <li>學習基本數學運算方法</li>
+                        <li>套件的操作及運用</li>
+                    </ol>
+                </li>
+            </ul>
+            <div class="class">
+                <h2>線上與實體課程差異</h2>
+                <table>
+                    <tr>
+                        <th>項目</th>
+                        <th>Hex School 線上課程</th>
+                        <th>一般線上課程</th>
+                        <th>實體課程</th>
+                    </tr>
+                    <tr class="item">
+                        <td>費用</td>
+                        <td><span>較低</span></td>
+                        <td><span>較低</span></td>
+                        <td>較高</td>
+                    </tr>
+                    <tr class="item">
+                        <td>學習效果</td>
+                        <td>一般</td>
+                        <td><span>較低</span></td>
+                        <td>很好</td>
+                    </tr>
+                    <tr class="item">
+                        <td>Code review</td>
+                        <td><span>有</span></td>
+                        <td>無</td>
+                        <td>不一定</td>
+                    </tr>
+                    <tr class="item">
+                        <td>課程更新速度</td>
+                        <td><span>普通</td>
+                        </td>
+                        <td>普通</td>
+                        <td>較慢</td>
+                    </tr>
+                    <tr class="item">
+                        <td>多次複習</td>
+                        <td><span>可</span></td>
+                        <td>可</td>
+                        <td>不可</td>
+                    </tr>
+                    <tr class="item">
+                        <td>字幕</td>
+                        <td><span>有</span></td>
+                        <td>不一定</td>
+                        <td>板書</td>
+                    </tr>
+                </table>
+                <form>
+                    <h2>對我們課程有興趣嗎？<br>歡迎留下您的資料</h2>
+                    <div class="data">
+                        <textarea name="" id="" rows="15"></textarea>
+                        <div class="info">
+                            <label for="name">姓名</label>
+                            <input type="text" name="name" id="name" placeholder="六角講師">
+                            <label for="tel">電話</label>
+                            <input type="tel" name="tel" id="tel" placeholder="0912345678">
+                            <label for="email">信箱</label>
+                            <input type="email" name="email" id="email" placeholder="hexschool@mail.com">
+                            <input class="send" type="submit" value="送出">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_logo">
+                <a href="#">logo</a>
+            </div>
+            <ul class="contact">
+                <li>聯絡我們：<a href="mailto:">hexschool@gmail.com</a></li>
+                <li>電話：<a href="tel:+">0999123456</a></li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</body>
+</html>
